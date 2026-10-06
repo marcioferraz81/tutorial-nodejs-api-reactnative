@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>01 • CRUD | Tutorial ETEC</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"><div class="container"><a class="navbar-brand fw-bold" href="index.html">ETEC • CRUD → API</a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto"><li><a class="nav-link active" href="01-crud.html">01 CRUD</a></li><li><a class="nav-link" href="02-api.html">02 API</a></li><li><a class="nav-link" href="03-render.html">03 Render</a></li><li><a class="nav-link" href="04-expo.html">04 Expo</a></li></ul></div></div></nav>
+
+<div class="progress fixed-progress"><div class="progress-bar" style="width:25%">25%</div></div>
+<main class="container page-main">
+<div class="page-hero"><span>ETAPA 01 • 25%</span><h1>Prepare e teste o CRUD</h1><p>Primeiro, faça a aplicação Node.js funcionar localmente com Firebase.</p></div>
+
+<div class="alert alert-primary"><strong>Objetivo:</strong> ao final desta etapa, CREATE, READ, UPDATE e DELETE devem estar funcionando.</div>
+
+<div class="step-card"><div class="step-number">01</div><h3>Estrutura do projeto</h3><pre><code>MVC CRUD e API-JSON/
+├── app.js
+├── package.json
+├── .gitignore
+├── config/
+│   ├── firebase.js
+│   └── serviceAccountKey.json
+├── controllers/
+│   └── categoriaController.js
+├── models/
+│   └── categoriaModel.js
+├── routes/
+│   └── categoriaRoutes.js
+└── views/</code></pre></div>
+
+<div class="step-card project-download"><div class="step-number">↓</div><h3>Baixe o projeto-base da aula</h3><p>Use este repositório como ponto de partida para acompanhar o tutorial e realizar os testes.</p><a class="btn btn-dark btn-lg" href="https://github.com/marcioferraz81/nodejs-crud-json" target="_blank" rel="noopener">↗ Abrir projeto no GitHub</a><p class="small text-muted mt-3 mb-0">Repositório: <code>marcioferraz81/nodejs-crud-json</code></p></div>
+
+<div class="step-card"><div class="step-number">02</div><h3>Instale e execute</h3><pre><code>npm install
+npm run dev</code></pre><p>Teste: <code>http://localhost:3000</code></p><p>Teste as categorias: <code>http://localhost:3000/categorias</code></p></div>
+
+<div class="step-card"><div class="step-number">03</div><h3>Confira o CRUD</h3><div class="table-responsive"><table class="table table-bordered"><thead><tr><th>Operação</th><th>Ação</th></tr></thead><tbody><tr><td>CREATE</td><td>Cadastrar categoria</td></tr><tr><td>READ</td><td>Listar categorias</td></tr><tr><td>UPDATE</td><td>Editar categoria</td></tr><tr><td>DELETE</td><td>Excluir categoria</td></tr></tbody></table></div></div>
+
+<div class="step-card"><div class="step-number">04</div><h3>Teste a API local antes de avançar</h3><p>Abra no navegador:</p><div class="url-box">http://localhost:3000/categorias/api</div><div class="alert alert-success mt-3 mb-0">A resposta precisa ser um JSON com as categorias.</div></div>
+
+<div class="next-area d-flex justify-content-between gap-2"><a class="btn btn-outline-secondary" href="index.html">← Início</a><a class="btn btn-primary btn-lg" href="02-api.html">Próxima etapa: 02 • API →</a></div>
+</main><footer class="footer"><div class="container text-center">ETEC • Centro Paula Souza</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script></body></html>
